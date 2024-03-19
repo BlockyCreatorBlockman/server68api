@@ -28,4 +28,4 @@ If you need help of setting this up you can come to my [Discord Server](https://
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.txt](https://github.com/independent-coder/JS-IP-Grabber/blob/main/LICENSE.txt) file for details. This repo, project, code is made by Independent-Coder(P1NGU!).
+This project is licensed under the MIT License - see the [LICENSE.txt](https://github.com/independent-coder/JS-IP-Grabber/blob/main/LICENSE.txt) file for details. This repo, project, code is made by Independent-Coder(P!NGU1).
